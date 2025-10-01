@@ -16,176 +16,283 @@
   </head>
   <body>
     <section class="header">
-      <div class="left-header">
-        <div class="menu-icon">
-          <span class="material-icons">menu</span>
-        </div>
-        <div class="logo">
-          <svg
-            width="42px"
-            height="42px"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <!-- Red background -->
-            <path
-              d="M30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"
-              fill="#FF0000"
-            />
-            <!-- White play triangle -->
-            <path d="M12.932 20.459v-8.917l7.839 4.459z" fill="#fff" />
-          </svg>
-          <h1>YouTube</h1>
-        </div>
-      </div>
-      <div class="center-header">
-        <div class="search-bar">
-          <input type="text" placeholder="Search" />
-          <button type="submit">
-            <span class="material-icons">search</span>
-          </button>
-        </div>
-        <div class="mic-button">
-          <button>
-            <span class="material-icons">mic</span>
-          </button>
-        </div>
-      </div>
-      <div class="right-header">
-        <div class="create-notif">
-          <div class="create">
-            <div class="create-icon">
-              <span class="material-icons create-icon">add</span>
-            </div>
-            <div class="create-text">
-              <p>Create</p>
-            </div>
+      <div class="top-header">
+        <div class="left-header">
+          <div class="menu-icon" id="header-dashboard-menu">
+            <span class="material-icons">menu</span>
           </div>
-          <div class="notification">
-            <span class="material-icons">notifications</span>
+          <div class="logo">
+            <svg
+              width="42px"
+              height="42px"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Red background -->
+              <path
+                d="M30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"
+                fill="#FF0000"
+              />
+              <!-- White play triangle -->
+              <path d="M12.932 20.459v-8.917l7.839 4.459z" fill="#fff" />
+            </svg>
+            <h1>YouTube</h1>
           </div>
         </div>
-        <div class="profile">
-          <img src="./images/avatar-tailwind.avif" alt="Profile" />
+
+        <div class="complete-right-header">
+          <div class="center-header">
+            <div class="search-bar">
+              <input type="text" placeholder="Search" />
+              <button type="submit">
+                <span class="material-icons">search</span>
+              </button>
+            </div>
+            <div class="mic-button">
+              <button>
+                <span class="material-icons">mic</span>
+              </button>
+            </div>
+          </div>
+          <div class="right-header">
+            <div class="create-notif">
+              <div class="create">
+                <div class="create-icon">
+                  <span class="material-icons create-icon">add</span>
+                </div>
+              </div>
+              <div class="notification">
+                <span class="material-icons">notifications</span>
+              </div>
+            </div>
+            <div class="profile">
+              <img src="./images/avatar-tailwind.avif" alt="Profile" />
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="category-details">
+        <button>All</button>
+        <button>Music</button>
+        <button>ASMR</button>
+        <button>Podcasts</button>
+        <button>Website</button>
+        <button>Mixes</button>
+        <button>Chicken</button>
+        <button>News</button>
+        <button>Live</button>
+        <button>AI</button>
+        <button>Ghosts</button>
+        <button>Thriller</button>
+        <button>Afrobeat</button>
+        <button>Animated Films</button>
       </div>
     </section>
+
     <section class="body">
+      <div class="under-dashboard">
+        <a href="#" class="under-item">
+          <span class="material-icons">home</span>
+          <span class="p">Home</span>
+        </a>
+        <a href="#" class="under-item">
+          <span class="material-icons">play_circle_filled</span>
+          <span class="p">Shorts</span>
+        </a>
+
+        <a href="#" class="under-item">
+          <span class="material-icons">subscriptions</span>
+          <span class="p">Subscriptions</span>
+        </a>
+
+        <a href="#" class="under-item">
+          <span class="material-icons">subscriptions</span>
+          <span class="p">You</span>
+        </a>
+
+        <a href="#" class="under-item">
+          <span class="material-icons">subscriptions</span>
+          <span class="p">Downloads</span>
+        </a>
+      </div>
+
       <div class="dashboard">
-        <div class="main-menu">
-          <div class="menu-item">
-            <span class="material-icons">home</span>
-            <p>Home</p>
+        <div class="left-header dashboard-top">
+          <div class="menu-icon" id="hover-dashboard-icon">
+            <span class="material-icons">menu</span>
           </div>
-          <div class="menu-item">
-            <span class="material-icons">play_circle_filled</span>
-            <p>Shorts</p>
-          </div>
-          <div class="menu-item">
-            <span class="material-icons">subscriptions</span>
-            <p>Subscriptions</p>
-          </div>
-        </div>
-        <div class="you-container">
-          <div class="title">
-            <p>You</p>
-            <span class="material-icons">expand_more</span>
-          </div>
-          <div class="main-menu">
-            <div class="menu-item">
-              <span class="material-icons">history</span>
-              <p>History</p>
-            </div>
-            <div class="menu-item">
-              <span class="material-icons">playlist_play</span>
-              <p>Playlists</p>
-            </div>
-            <div class="menu-item">
-              <span class="material-icons">video_library</span>
-              <p>Your videos</p>
-            </div>
-            <div class="menu-item">
-              <span class="material-icons">queue</span>
-              <p>Your playlists</p>
-            </div>
-            <div class="menu-item">
-              <span class="material-icons">watch_later</span>
-              <p>Watch later</p>
-            </div>
-            <div class="menu-item">
-              <span class="material-icons">thumb_up</span>
-              <p>Liked videos</p>
-            </div>
+          <div class="logo">
+            <svg
+              width="42px"
+              height="42px"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Red background -->
+              <path
+                d="M30.368 8.735c-0.354-1.301-1.354-2.307-2.625-2.663l-0.027-0.006c-3.193-0.406-6.886-0.638-10.634-0.638-0.381 0-0.761 0.002-1.14 0.007l0.058-0.001c-0.322-0.004-0.701-0.007-1.082-0.007-3.748 0-7.443 0.232-11.070 0.681l0.434-0.044c-1.297 0.363-2.297 1.368-2.644 2.643l-0.006 0.026c-0.4 2.109-0.628 4.536-0.628 7.016 0 0.088 0 0.176 0.001 0.263l-0-0.014c-0 0.074-0.001 0.162-0.001 0.25 0 2.48 0.229 4.906 0.666 7.259l-0.038-0.244c0.354 1.301 1.354 2.307 2.625 2.663l0.027 0.006c3.193 0.406 6.886 0.638 10.634 0.638 0.38 0 0.76-0.002 1.14-0.007l-0.058 0.001c0.322 0.004 0.702 0.007 1.082 0.007 3.749 0 7.443-0.232 11.070-0.681l-0.434 0.044c1.298-0.362 2.298-1.368 2.646-2.643l0.006-0.026c0.399-2.109 0.627-4.536 0.627-7.015 0-0.088-0-0.176-0.001-0.263l0 0.013c0-0.074 0.001-0.162 0.001-0.25 0-2.48-0.229-4.906-0.666-7.259l0.038 0.244z"
+                fill="#FF0000"
+              />
+              <!-- White play triangle -->
+              <path d="M12.932 20.459v-8.917l7.839 4.459z" fill="#fff" />
+            </svg>
+            <h1>YouTube</h1>
           </div>
         </div>
-        <div class="subscriptions">
-          <div class="title">
-            <p>Subscriptions</p>
-          </div>
+
+        <div class="dashboard-children">
           <div class="main-menu">
             <div class="menu-item">
-              <img src="../assets/subscription1.jpg" alt="Subscription 1" />
-              <p>Channel 1</p>
+              <span class="material-icons">home</span>
+              <p>Home</p>
             </div>
             <div class="menu-item">
-              <img src="../assets/subscription2.jpg" alt="Subscription 2" />
-              <p>Channel 2</p>
+              <span class="material-icons">play_circle_filled</span>
+              <p>Shorts</p>
             </div>
             <div class="menu-item">
-              <img src="../assets/subscription3.jpg" alt="Subscription 3" />
-              <p>Channel 3</p>
-            </div>
-            <div class="menu-item">
-              <img src="../assets/subscription4.jpg" alt="Subscription 4" />
-              <p>Channel 4</p>
+              <span class="material-icons">subscriptions</span>
+              <p>Subscriptions</p>
             </div>
           </div>
-        </div>
-        <div class="explore">
-          <div class="title">
-            <p>Explore</p>
+
+          <div class="you-container">
+            <div class="title">
+              <p>You</p>
+              <span class="material-icons">expand_more</span>
+            </div>
+            <div class="main-menu">
+              <div class="menu-item">
+                <span class="material-icons">history</span>
+                <p>History</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">playlist_play</span>
+                <p>Playlists</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">video_library</span>
+                <p>Your videos</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">queue</span>
+                <p>Your playlists</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">watch_later</span>
+                <p>Watch later</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">thumb_up</span>
+                <p>Liked videos</p>
+              </div>
+            </div>
           </div>
-          <div class="main-menu">
-            <div class="menu-item">
-              <span class="material-icons">whatshot</span>
-              <p>Trending</p>
+
+          <div class="subscriptions">
+            <div class="title">
+              <p>Subscriptions</p>
             </div>
-            <div class="menu-item">
-              <span class="material-icons">music_note</span>
-              <p>Music</p>
+            <div class="main-menu">
+              <div class="menu-item">
+                <img src="../assets/subscription1.jpg" alt="Subscription 1" />
+                <p>Channel 1</p>
+              </div>
+              <div class="menu-item">
+                <img src="../assets/subscription2.jpg" alt="Subscription 2" />
+                <p>Channel 2</p>
+              </div>
+              <div class="menu-item">
+                <img src="../assets/subscription3.jpg" alt="Subscription 3" />
+                <p>Channel 3</p>
+              </div>
+              <div class="menu-item">
+                <img src="../assets/subscription4.jpg" alt="Subscription 4" />
+                <p>Channel 4</p>
+              </div>
             </div>
-            <div class="menu-item">
-              <span class="material-icons">sports_esports</span>
-              <p>Gaming</p>
+          </div>
+          <div class="explore">
+            <div class="title">
+              <p>Explore</p>
             </div>
-            <div class="menu-item">
-              <span class="material-icons">article</span>
-              <p>News</p>
+            <div class="main-menu">
+              <div class="menu-item">
+                <span class="material-icons">whatshot</span>
+                <p>Trending</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">music_note</span>
+                <p>Music</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">sports_esports</span>
+                <p>Gaming</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">article</span>
+                <p>News</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">sports_soccer</span>
+                <p>Sports</p>
+              </div>
             </div>
-            <div class="menu-item">
-              <span class="material-icons">sports_soccer</span>
-              <p>Sports</p>
+          </div>
+          <div class="subscriptions">
+            <div class="title">
+              <p>Subscriptions</p>
+            </div>
+            <div class="main-menu">
+              <div class="menu-item">
+                <img src="../assets/subscription1.jpg" alt="Subscription 1" />
+                <p>Channel 1</p>
+              </div>
+              <div class="menu-item">
+                <img src="../assets/subscription2.jpg" alt="Subscription 2" />
+                <p>Channel 2</p>
+              </div>
+              <div class="menu-item">
+                <img src="../assets/subscription3.jpg" alt="Subscription 3" />
+                <p>Channel 3</p>
+              </div>
+              <div class="menu-item">
+                <img src="../assets/subscription4.jpg" alt="Subscription 4" />
+                <p>Channel 4</p>
+              </div>
+            </div>
+          </div>
+          <div class="explore">
+            <div class="title">
+              <p>Explore</p>
+            </div>
+            <div class="main-menu">
+              <div class="menu-item">
+                <span class="material-icons">whatshot</span>
+                <p>Trending</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">music_note</span>
+                <p>Music</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">sports_esports</span>
+                <p>Gaming</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">article</span>
+                <p>News</p>
+              </div>
+              <div class="menu-item">
+                <span class="material-icons">sports_soccer</span>
+                <p>Sports</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="details">
-        <div class="category-details">
-          <button>All</button>
-          <button>Music</button>
-          <button>ASMR</button>
-          <button>Podcasts</button>
-          <button>Website</button>
-          <button>Mixes</button>
-          <button>Chicken</button>
-          <button>News</button>
-          <button>Live</button>
-          <button>AI</button>
-          <button>Ghosts</button>
-          <button>Thriller</button>
-          <button>Afrobeat</button>
-          <button>Animated Films</button>
-        </div>
         <div class="videos-con">
           <div class="row">
             <div class="video-card">
@@ -206,15 +313,10 @@
                         <p>Channel Name 1</p>
                       </div>
                       <div class="channel-details">
-                        <div class="view">
-                          <p>1M views</p>
-                        </div>
-                        <div class="divider">
-                          <p>.</p>
-                        </div>
-                        <div class="upload-date">
-                          <p>2 days ago</p>
-                      </div> 
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -222,8 +324,10 @@
                   <span class="material-icons">more_vert</span>
                 </div>
               </div>
-            </div>  
-        </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="video-card">
               <div class="card-image image2"></div>
               <div class="video-info">
@@ -242,15 +346,10 @@
                         <p>Channel Name 2</p>
                       </div>
                       <div class="channel-details">
-                        <div class="view">
-                          <p>1M views</p>
-                        </div>
-                        <div class="divider">
-                          <p>.</p>
-                        </div>
-                        <div class="upload-date">
-                          <p>2 days ago</p>
-                      </div> 
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -258,8 +357,10 @@
                   <span class="material-icons">more_vert</span>
                 </div>
               </div>
-            </div>  
-        </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="video-card">
               <div class="card-image image3"></div>
               <div class="video-info">
@@ -274,19 +375,12 @@
                       </h3>
                     </div>
                     <div class="bottom-text">
-                      <div class="channel-name">
-                        <p>Channel Name 3</p>
-                      </div>
+                      <div class="channel-name"><p>Channel Name 3</p></div>
                       <div class="channel-details">
-                        <div class="view">
-                          <p>1M views</p>
-                        </div>
-                        <div class="divider">
-                          <p>.</p>
-                        </div>
-                        <div class="upload-date">
-                          <p>2 days ago</p>
-                      </div> 
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -294,9 +388,9 @@
                   <span class="material-icons">more_vert</span>
                 </div>
               </div>
-            </div>  
-        </div>
-      </div>
+            </div>
+          </div>
+
           <div class="row">
             <div class="video-card">
               <div class="card-image image4"></div>
@@ -312,19 +406,12 @@
                       </h3>
                     </div>
                     <div class="bottom-text">
-                      <div class="channel-name">
-                        <p>Channel Name 4</p>
-                      </div>
+                      <div class="channel-name"><p>Channel Name 4</p></div>
                       <div class="channel-details">
-                        <div class="view">
-                          <p>1M views</p>
-                        </div>
-                        <div class="divider">
-                          <p>.</p>
-                        </div>
-                        <div class="upload-date">
-                          <p>2 days ago</p>
-                      </div> 
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -332,8 +419,10 @@
                   <span class="material-icons">more_vert</span>
                 </div>
               </div>
-            </div>  
-        </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="video-card">
               <div class="card-image image5"></div>
               <div class="video-info">
@@ -348,19 +437,12 @@
                       </h3>
                     </div>
                     <div class="bottom-text">
-                      <div class="channel-name">
-                        <p>Channel Name 5</p>
-                      </div>
+                      <div class="channel-name"><p>Channel Name 5</p></div>
                       <div class="channel-details">
-                        <div class="view">
-                          <p>1M views</p>
-                        </div>
-                        <div class="divider">
-                          <p>.</p>
-                        </div>
-                        <div class="upload-date">
-                          <p>2 days ago</p>
-                      </div> 
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -368,8 +450,10 @@
                   <span class="material-icons">more_vert</span>
                 </div>
               </div>
-            </div>  
-        </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="video-card">
               <div class="card-image image6"></div>
               <div class="video-info">
@@ -384,19 +468,12 @@
                       </h3>
                     </div>
                     <div class="bottom-text">
-                      <div class="channel-name">
-                        <p>Channel Name 6</p>
-                      </div>
+                      <div class="channel-name"><p>Channel Name 6</p></div>
                       <div class="channel-details">
-                        <div class="view">
-                          <p>1M views</p>
-                        </div>
-                        <div class="divider">
-                          <p>.</p>
-                        </div>
-                        <div class="upload-date">
-                          <p>2 days ago</p>
-                      </div> 
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -404,10 +481,391 @@
                   <span class="material-icons">more_vert</span>
                 </div>
               </div>
-            </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image1"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name">
+                        <p>Channel Name 1</p>
+                      </div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image2"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name">
+                        <p>Channel Name 2</p>
+                      </div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image3"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 3</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image4"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 4</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image5"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 5</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image6"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 6</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image1"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name">
+                        <p>Channel Name 1</p>
+                      </div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image2"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name">
+                        <p>Channel Name 2</p>
+                      </div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image3"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 3</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image4"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 4</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image5"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 5</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="video-card">
+              <div class="card-image image6"></div>
+              <div class="video-info">
+                <div class="video-titles">
+                  <div class="channel-avatar">
+                    <img src="./images/avatar-tailwind.avif" alt="" />
+                  </div>
+                  <div class="card-texts">
+                    <div class="top-text">
+                      <h3>
+                        Lorem ipsum dolor sit, amet consect adipisicing elit.
+                      </h3>
+                    </div>
+                    <div class="bottom-text">
+                      <div class="channel-name"><p>Channel Name 6</p></div>
+                      <div class="channel-details">
+                        <div class="view"><p>1M views</p></div>
+                        <div class="divider"><p>.</p></div>
+                        <div class="upload-date"><p>2 days ago</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-icon">
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
