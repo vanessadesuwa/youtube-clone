@@ -4,6 +4,7 @@ const dashboardChild = document.querySelector(".dashboard-children");
 const dashBoard = document.querySelector(".dashboard");
 const categoryDetails = document.querySelector(".category-details");
 const details = document.querySelector(".details");
+const dashboardOverlay = document.querySelector(".dashboard-overlay");
 
 dashboardChild.addEventListener("mouseenter", () => {
   dashboardChild.classList.add("scroll-hover");
@@ -19,8 +20,7 @@ dashboardHover.addEventListener("click", () => {
     details.classList.toggle("hide-dashboard");
   } else if (window.innerWidth <= 1200) {
     dashBoard.classList.toggle("display");
-  } else {
-    dashBoard.classList.toggle("display");
+    dashboardOverlay.classList.toggle("overlay");
   }
 });
 dashboardHeader.addEventListener("click", () => {
@@ -30,12 +30,10 @@ dashboardHeader.addEventListener("click", () => {
     details.classList.toggle("hide-dashboard");
   } else if (window.innerWidth <= 1200) {
     dashBoard.classList.toggle("display");
-  } else {
-    dashBoard.classList.toggle("display");
+    dashboardOverlay.classList.toggle("overlay");
   }
 });
-// dashboardHeader.addEventListener("click", () => {
-//   if (window.innerWidth <= 768) {
-//     dashBoard.classList.toggle("display");
-//   }
-// });
+dashboardOverlay.addEventListener("click", () => {
+  dashBoard.classList.toggle("display");
+  dashboardOverlay.classList.toggle("overlay");
+});
